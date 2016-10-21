@@ -116,7 +116,7 @@ if (!module.parent) {
 
   } else {
     // Code to run if we're in a worker process
-    app.listen(config.port);
+    app.listen(process.env.PORT || config.port);
     debug('Worker %d running!', cluster.worker.id);
   }
 }
