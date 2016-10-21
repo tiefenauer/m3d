@@ -1,0 +1,18 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "client": {
+    "basePaths" :{
+      "dest": "build"
+    }
+  , "paths": {
+      "styles" : { "src" : "client/**/*.scss", "dest" : "build/css/"}
+    , "scripts" : { "src" : "client/modules/**/*.js", "dest" : "build/js/"}
+    , "pages" : { "src":  "client/pages/", "dest": "build/"}
+    , "assets" : { "src":  "assets/", "dest": "build/assets"}
+    }
+  , "scriptsRoot": "client/scripts/main.js"
+  , "vendorRoot": "client/scripts/vendor.js"
+  }
+}
