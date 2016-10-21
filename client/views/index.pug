@@ -1,5 +1,13 @@
 extends layout
 
-block body
-  h1=title
-  p Welcome to #{title}
+block page-header
+  h1 M3D
+
+block page-content
+  .jumbotron
+    h1 Stay tuned!
+    p m3d is coming soon!
+
+  p In the meantime, why don't you check out the following links?
+  p
+    a(href='/create', role="button").btn.btn-default Map
