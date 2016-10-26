@@ -5,7 +5,7 @@
   "scripts": {
     "build": "./node_modules/.bin/gulp build",
     "debug": "set DEBUG=m3d-* && npm start",
-    "start": "npm run build && node server/app.js"
+    "start": "npm run build && PORT=3001 node server/app.js"
   },
   "dependencies": {
     "@google/maps": "^0.3.0",

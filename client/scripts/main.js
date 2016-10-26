@@ -1,3 +1,1 @@
-/**
- * Created by Daniel on 21.10.2016.
- */
+require('../modules/map/map')

@@ -1,4 +1,5 @@
 var  gulpWebpack = require('webpack-stream')
+var webpackConfig = require('../../webpack.config')
 
 module.exports = function(gulp, $, config){
   var srcFiles = config.paths.scripts.src
@@ -8,7 +9,7 @@ module.exports = function(gulp, $, config){
     return gulp.src(srcFiles)
       .pipe($.eslint({envs: ['browser']}))
       .pipe($.eslint.format())
-      .pipe(gulpWebpack(config.webpack))
+      .pipe(gulpWebpack(webpackConfig))
       .pipe(gulp.dest(destFiles))
   }
   task.description = 'move all js files to destination folder'

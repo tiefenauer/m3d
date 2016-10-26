@@ -5,11 +5,8 @@ html
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css' )
     link(rel='stylesheet', href='/css/' + stylescss )
 
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
-
     script(src='/js/vendor.min.js')
-    script(src='/js/' + mainjs)
+
     block scripts
   body
     .page-header
@@ -18,3 +15,5 @@ html
 
     .container
       block page-content
+
+  script(src='/js/' + mainjs)
