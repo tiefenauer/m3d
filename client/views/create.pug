@@ -3,7 +3,7 @@ include ../modules/map/layout
 
 block page-header
   h1 Define your base area
-  a.btn.btn-default#calculateProfileBtn click me
+  +map-tools()
 
 block page-content
-  +google-map()
+  +map-canvas()

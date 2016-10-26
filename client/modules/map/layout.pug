@@ -1,4 +1,4 @@
-mixin google-map()
+mixin map-canvas()
   #map
   script.
       function initMap() {
@@ -11,3 +11,11 @@ mixin google-map()
       }
 
   script(src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC7Uu6dvnQka6EL0MAiCCr7_6VfynDigm0&libraries=places,drawing&callback=initMap')
+
+mixin map-tools()
+  a.btn.btn-default&attributes({'data-toggle': 'tooltip', 'data-placement': 'top', 'title': 'Draw polygonal footprint'})#btn-draw-poly
+    span.glyphicon.glyphicon-pencil
+  a.btn.btn-default#btn-draw-rect
+    span.glyphicon.glyphicon-edit
+  a.btn.btn-default#btn-draw-city
+    span.glyphicon.glyphicon-globe
