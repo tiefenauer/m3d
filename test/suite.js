@@ -1,1 +1,1 @@
-require()
+require('./pages/check')
