@@ -5,13 +5,15 @@
   "scripts": {
     "build": "./node_modules/.bin/gulp build",
     "debug": "set DEBUG=m3d-* && PORT=3001 npm start",
-    "start": "npm run build && node server/app.js"
+    "start": "npm run build && node server/app.js",
+    "test": "npm run build && node test/suite.js"
   },
   "dependencies": {
     "@google/maps": "^0.3.0",
     "assets-webpack-plugin": "^3.4.0",
     "body-parser": "~1.15.1",
     "bootstrap": "^3.3.7",
+    "child_process": "^1.0.2",
     "cluster": "^0.7.7",
     "compression": "^1.6.2",
     "cookie-parser": "~1.4.3",
@@ -32,8 +34,11 @@
     "morgan": "~1.7.0",
     "node-sass-middleware": "0.8.0",
     "path": "^0.12.7",
+    "proxyquire": "^1.7.10",
     "pug": "^2.0.0-beta6",
     "serve-favicon": "~2.3.0",
+    "superagent": "^2.3.0",
+    "tape": "^4.6.2",
     "webpack": "^1.13.2",
     "webpack-stream": "^3.2.0"
   },
